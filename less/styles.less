@@ -10,15 +10,19 @@
 .alpha-bg(@pc) {
   @bg : rgba(41, 45, 61, @pc);
 }
+
 .brand-primary-rgba(@pc) {
   @c: rgba(41, 45, 61, @pc);
 }
+
 .brand-green-rgba(@pc) {
   @c: rgba(105, 190, 40, @pc);
 }
+
 .brand-grey-rgba(@pc) {
   @c: rgba(172, 182, 188,@pc);
 }
+
 .brand-accent-rgba(@pc) {
   @c: rgba(216, 28, 76,@pc);
 }
@@ -30,19 +34,24 @@
 .c-b-grey {
   color: @brand-grey;
 }
+
 .c-b-grey-dark {
   color: @brand-grey-dark;
 
 }
+
 .c-b-grey-light {
   color: @brand-grey-light;
 }
+
 .c-b-green {
   color: @brand-green;
 }
+
 .c-b-accent {
   color: @brand-accent;
 }
+
 /*    */
 /*! normalize.css v1.0.0 | MIT License | git.io/normalize */
 
@@ -815,6 +824,95 @@ iPhone Section
   z-index: 1;
 }
 
+.showcase {
+  background: url('../img/showcase-bg-fixed-01.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.showcase h1 {
+  margin: 0 0 20px 0;
+  color: #fff;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.showcase p {
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.device {
+  position: absolute;
+  top: -60px;
+  left: 20%;
+  min-height: 676px;
+  width: 359px;
+  background: url('../img/iphone-skeleton.png') no-repeat center center;
+}
+
+.device-content {
+  position: absolute;
+  top: 115px;
+  left: 56px;
+  width: 247px;
+  height: 445px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.device-content img {
+  width: 247px;
+  height: 445px;
+}
+
+.device-tablet {
+  position: absolute;
+  top: -60px;
+  left: 20%;
+  min-height:750px;
+  width: 60%;
+  background: url('../img/ipad-2x.png') no-repeat;
+  background-size: 100%;
+}
+
+.device-tablet-content {
+//  position: absolute;
+
+  width: inherit;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.device-tablet-content img {
+  position: absolute;
+  width: 90%;
+  top: -200px;
+  left: 30px;
+  clip: rect(250px,600px,845px,0px);
+}
+
+.showcase-wrap {
+  position: relative;
+  padding: 100px 0;
+  min-height: 600px;
+}
+
+.showcase-slider ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.showcase-slider .flickity-page-dots {
+  bottom: 20px;
+}
+
+#processSlider {
+  height: auto;
+}
+
+#processSlider [class*="icon-"] {
+  font-size: 16em;
+}
+
 .fluid-white {
   width: 50%;
   background: #fff;
@@ -1237,17 +1335,22 @@ ul.legals li:last-child::after {
 FlexSlider Custom CSS
 ========================================================================== */
 #servicesSlider {
-  margin-top: 70px;
+  margin-top: 0;
 }
 
 ul.slides li {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 /* ==========================================================================
 Waypoints
 ========================================================================== */
-.wp1, .wp2, .wp3, .wp4, .wp5, .wp6 {
+.wp1,
+.wp2,
+  //.wp3,
+.wp4,
+.wp5,
+.wp6 {
   visibility: hidden;
 }
 
@@ -1266,8 +1369,8 @@ Waypoints
 }
 
 .wp3 {
-  background: url('../img/iphone-bg.png') no-repeat center center;
-  background-position: 200px 10px;
+  //  background: url('../img/iphone-bg.png') no-repeat center center;
+  //  background-position: 200px 10px;
   height: 100%;
 }
 
