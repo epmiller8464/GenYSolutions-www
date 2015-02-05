@@ -37,7 +37,7 @@
                         <ul class="list-inline">
                             <li><a href="#intro">Introduction <span class="indicator"></span></a></li>
                             <li><a href="#team">Team <span class="indicator"></span></a></li>
-                            <li><img src="img/logo-sm.png"></li>
+                            <li><img src="img/logo@1x.png"></li>
                             <li><a href="#portfolio">Portfolio <span class="indicator"></span></a></li>
                             <li><a href="#contact">Get in Touch <span class="indicator"></span></a></li>
                         </ul>
@@ -145,11 +145,33 @@
 <section class="text-center" id="responsive">
     <div class="container-fluid section-padding responsive-services">
         <div class="wrapper">
-            <div class="col-md-6">
-                <div class="device wp3">
-                    <div class="device-content">
-                        <div class="showcase-slider">
-                            <ul class="slides" id="showcaseSlider">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="device">
+                        <div class="device-content">
+                            <div id="showcaseSlider">
+                                <ul class="slides">
+                                    <li>
+                                        <img src="img/LandingPage.jpg" alt="Device Content Image">
+
+                                    </li>
+                                    <li>
+                                        <img src="img/login.jpg" alt="Device Content Image">
+
+                                    </li>
+                                    <li>
+                                        <img src="img/Menu.jpg" alt="Device Content Image">
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="device-tablet">
+                        <div class="device-tablet-content" id="showcaseSlider2">
+                            <ul class="slides">
                                 <li>
                                     <img src="img/LandingPage.jpg" alt="Device Content Image">
 
@@ -159,7 +181,7 @@
 
                                 </li>
                                 <li>
-                                    <img src="img/Calendar.jpg" alt="Device Content Image">
+                                    <img src="img/Menu.jpg" alt="Device Content Image">
 
                                 </li>
                             </ul>
@@ -167,34 +189,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 hide">
-                <div class="device-tablet wp3 delay-05s">
-                    <div class="device-tablet-content">
-                        <img src="img/LandingPage.jpg" alt="Device Content Image">
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="col-md-6">
-                 <div class="device-tablet">
-                     <div class="device-tablet-content">
-                         <div class="showcase-slider">
-                             <ul class="slides" id="showcaseSlider2">
-                                 <li>
-                                     <img src="img/LandingPage.jpg" alt="Device Content Image">
-                                 </li>
-                             </ul>
-                         </div>
-                     </div>
-                 </div>
-             </div>-->
         </div>
-
-        <div class="container designs">
-            <div class="row">
-                <div class="col-md-5 col-md-offset-7">
-                    <div id="servicesSlider">
-                        <ul class="slides">
-                            <li>
+    </div>
+</section>
+<section class="text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div id="processSlider">
+                    <ul class="slides">
+                        <li>
                                 <span>
                                     <div class="icon">
                                         <i class="fa fa-wrench shadow"></i>
@@ -217,8 +221,8 @@
                                         Bitbucket - a tool that allow for code reviews and collaboration on the code
                                     </p>
                                 </span>
-                            </li>
-                            <li>
+                        </li>
+                        <li>
                                 <span>
                                     <div class="icon">
                                         <i class="fa fa-whatsapp shadow"></i>
@@ -235,8 +239,8 @@
                                         improve user experience.
                                     </p>
                                 </span>
-                            </li>
-                            <li>
+                        </li>
+                        <li>
                                 <span>
                                     <div class="icon">
                                         <i class="fa fa-desktop shadow"></i>
@@ -255,9 +259,9 @@
                                         work of modifying a live system
                                     </p>
                                 </span>
-                            </li>
-                            <!--delay-05s-->
-                            <li>
+                        </li>
+                        <!--delay-05s-->
+                        <li>
                                 <span>
                                     <div class="icon">
                                         <i class="fa fa-file-text-o shadow"></i>
@@ -278,8 +282,8 @@
                                     </p>
                                 </span>
 
-                            </li>
-                            <li>
+                        </li>
+                        <li>
                                 <span>
                                     <div class="icon">
                                         <i class="fa fa-code shadow"></i>
@@ -307,8 +311,8 @@
 
                                     </p>
                                 </span>
-                            </li>
-                            <li>
+                        </li>
+                        <li>
                                 <span>
                                     <div class="icon">
                                         <i class="fa fa-bug shadow"></i>
@@ -322,9 +326,9 @@
 
                                     </p>
                                 </span>
-                            </li>
-                            <!--delay-1s-->
-                            <li>
+                        </li>
+                        <!--delay-1s-->
+                        <li>
                                 <span>
                                     <div class="icon">
                                         <i class="fa fa-pencil-square-o shadow"></i>
@@ -342,8 +346,8 @@
                                         client's remarks.
                                     </p>
                                 </span>
-                            </li>
-                            <li>
+                        </li>
+                        <li>
                                 <span>
                                     <div class="icon">
                                         <i class="fa fa-cloud-upload shadow"></i>
@@ -356,8 +360,8 @@
 
                                     </p>
                                 </span>
-                            </li>
-                            <li>
+                        </li>
+                        <li>
                                 <span>
                                     <div class="icon">
                                         <i class="fa fa-certificate shadow"></i>
@@ -373,9 +377,8 @@
                                         specification.
                                     </p>
                                 </span>
-                            </li>
-                        </ul>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -691,8 +694,7 @@
                 </ul>
             </div>
             <div class="col-md-6 credit">
-                <p>Designed &amp; Developed by <a href="http://www.peterfinlan.com/">Peter Finlan</a> exclusively for <a
-                        href="http://tympanus.net/codrops/"><em>Codrops</em></a></p>
+                <p>Designed &amp; Developed by Gen Y Solutions</p>
             </div>
         </div>
     </div>
@@ -707,7 +709,6 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.rc.1/handlebars.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ember.js/1.0.0-pre.2/ember-1.0.0-pre.2.min.js"></script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="./js/flickity.pkgd.min.js"></script>
 <script src="./js/scripts.js"></script>
 <script src="./js/classie.js"></script>
 <script src="./js/svganimations.js"></script>
