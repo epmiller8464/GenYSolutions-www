@@ -443,7 +443,7 @@ h2::after {
   -ms-transform: translate(0, -15px);
 }
 .wrapper {
-  height: 850px;
+  height: 700px;
 }
 .nopadding {
   padding: 0;
@@ -454,8 +454,10 @@ h2::after {
 /* ==========================================================================
 Navigation
 ========================================================================== */
+#nav-logo {
+  background: #acb6bc;
+}
 nav {
-  background-color: rgba(255, 255, 255, 0.7);
   margin-top: -1px;
 }
 nav ul {
@@ -492,10 +494,13 @@ nav ul li a:focus {
   color: #ffffff;
 }
 .main-nav.navbar {
-  background-color: transparent;
   padding: 0;
   font-size: 1.25em;
 }
+/*.main-nav.navbar.dark {
+  .brand-primary-rgba(0.8);
+  background-color: @c;
+}*/
 #nav-toggle {
   position: absolute;
   right: 15px;
@@ -591,7 +596,7 @@ Hero
 .hero-overlay {
   width: auto;
   height: auto;
-  background: rgba(41, 45, 61, 0.8) repeat url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAJUlEQVQYV2NkIAIwEqGGgYaK1m7fWx/s6dyI7AwaWofNt0RZBwCcbAQKlzbD4QAAAABJRU5ErkJggg==');
+  background: rgba(41, 45, 61, 0.5) repeat url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAJUlEQVQYV2NkIAIwEqGGgYaK1m7fWx/s6dyI7AwaWofNt0RZBwCcbAQKlzbD4QAAAABJRU5ErkJggg==');
 }
 .jumbotron.hero .hero-overlay {
   padding: -webkit-calc(1%) 0 -webkit-calc(5%) 0;
@@ -659,14 +664,52 @@ Hero
 /* ==========================================================================
 Intro
 ========================================================================== */
+.intro-pic {
+  width: 100%;
+  position: relative;
+  margin: 0px auto;
+  padding: 0px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #b3b5b8;
+  background-position: 45% -1px;
+  background-size: 210%;
+}
+#intro-pic {
+  width: 100%;
+  position: relative;
+  margin: 0px auto 40px auto;
+  padding: 0px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #b3b5b8;
+  background: url('../img/c-me.png') no-repeat;
+  background-position: 45% -1px;
+  background-size: 210%;
+}
+#stache {
+  transform: rotate(18deg) scale(1.1);
+  position: absolute;
+  top: 67.4px;
+  left: 79.5px;
+  transition: all linear .2ms;
+  fill: #000000;
+}
+#intro-pic:hover #stache {
+  fill: #e37e0f;
+  transform: scale(1.2) rotate(18deg);
+  transition: fill linear .7ms;
+}
 .intro p {
   margin: 50px 0 0;
   color: #292d3d;
 }
 h1.arrow {
-  font-size: 15px;
+  font-size: 1.5em;
   text-transform: uppercase;
-  color: #353535;
+  color: #292d3d;
   letter-spacing: 1px;
   background: url('../img/h1-bg.png') no-repeat center bottom;
   padding-bottom: 30px;
@@ -764,26 +807,26 @@ iPhone Section
 }
 .device-tablet {
   position: absolute;
-  top: -60px;
+  top: 60px;
   right: 20%;
   height: 776px;
   width: 65%;
   background: url('../img/ipad-2x.png') no-repeat;
   background-size: 100%;
-  transform: scale(0.8, 0.8);
-  -ms-transform: scale(0.8, 0.8);
-  -webkit-transform: scale(0.8, 0.8);
+  /* transform: scale(0.8,0.8);
+   -ms-transform: scale(0.8,0.8);
+   -webkit-transform: scale(0.8,0.8);*/
 }
 .device-tablet-content {
   position: absolute;
-  top: 45px;
+  top: 35px;
   left: 0px;
   width: 100%;
-  height: 100%;
+  height: 90%;
 }
 .device-tablet-content img {
-  height: 500px;
-  width: 80%;
+  height: 400px;
+  width: 85%;
 }
 #processSlider {
   height: auto;

@@ -183,3 +183,14 @@ $(window).load(function () {
     });
 
 });
+
+// SKROLLR INI ---->
+$(function() {
+    var windowWidth = $(window).width();
+    if (windowWidth > 1024) {
+        skrollr.init({
+            forceHeight: false,
+            constants:{intro:1000}
+        });
+    }
+});

@@ -33,11 +33,12 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
-                    <nav id="" class="main-nav navbar navbar-fixed-top nav-justified text-center">
+                    <nav class="main-nav navbar navbar-fixed-top nav-justified text-center band skrollable skrollable-between"
+                        data-0="background-color:rgba(41,45,61,0);" data-500="background-color:rgba(41, 45, 61, 0.8);" data-750="background-color:rgba(41, 45, 61, 0.9);" data-1000="background-color:rgba(41, 45, 61, 1);" >
                         <ul class="list-inline">
                             <li><a href="#intro">Introduction <span class="indicator"></span></a></li>
                             <li><a href="#team">Team <span class="indicator"></span></a></li>
-                            <li><img src="img/logo@1x.png"></li>
+                            <li><img id="nav-logo" src="img/logo@1x.png" class="img-rounded" ></li>
                             <li><a href="#portfolio">Portfolio <span class="indicator"></span></a></li>
                             <li><a href="#contact">Get in Touch <span class="indicator"></span></a></li>
                         </ul>
@@ -69,7 +70,7 @@
     </section>
 </section>
 </section>
-<section class="intro text-center section-padding text-primary light-bg" id="intro">
+<section class="intro text-center section-padding text-primary" id="intro" ="">
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 wp1">
@@ -99,11 +100,11 @@
         </div>
     </div>
 </section>
-<section class="features text-center section-padding" id="features">
+<section class="features text-center section-padding dark-bg" id="features">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="arrow">Love what you do, and you'll do it well</h1>
+                <h1 class="arrow">We Love What We Do</h1>
 
                 <div class="features-wrapper">
                     <div class="col-md-4 wp2 animated fadeInUp">
@@ -142,35 +143,13 @@
         </div>
     </div>
 </section>
-<section class="text-center" id="responsive">
-    <div class="container-fluid section-padding responsive-services">
-        <div class="wrapper">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="device">
-                        <div class="device-content">
-                            <div id="showcaseSlider">
-                                <ul class="slides">
-                                    <li>
-                                        <img src="img/LandingPage.jpg" alt="Device Content Image">
-
-                                    </li>
-                                    <li>
-                                        <img src="img/login.jpg" alt="Device Content Image">
-
-                                    </li>
-                                    <li>
-                                        <img src="img/Menu.jpg" alt="Device Content Image">
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="device-tablet">
-                        <div class="device-tablet-content" id="showcaseSlider2">
+<section class="text-center wrapper" id="responsive">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="device">
+                    <div class="device-content">
+                        <div id="showcaseSlider">
                             <ul class="slides">
                                 <li>
                                     <img src="img/LandingPage.jpg" alt="Device Content Image">
@@ -189,13 +168,48 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-6">
+                <div class="device-tablet">
+                    <div class="device-tablet-content" id="showcaseSlider2">
+                        <ul class="slides">
+                            <li>
+                                <img src="img/LandingPage.jpg" alt="Device Content Image">
+
+                            </li>
+                            <li>
+                                <img src="img/login.jpg" alt="Device Content Image">
+
+                            </li>
+                            <li>
+                                <img src="img/Menu.jpg" alt="Device Content Image">
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="clearfix"></div>
+
 </section>
-<section class="text-center">
+<section class="text-center section-padding dark-bg clearfix" style="position: relative;">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-8 col-md-offset-2 text-primary">
+                <h1 class="arrow">
+                    Development process
+                </h1>
+
+                <h3>
+                    The goal of our software creation process is to allow us to meet our client's goals the best we can,
+                    while keeping good quality of code practices and meeting deadlines. We modify the process based on
+                    specific client's needs.
+                    <br/>
+                </h3>
+
+                <h1 class="text-primary">The main steps are:</h1>
+
                 <div id="processSlider">
                     <ul class="slides">
                         <li>
@@ -394,7 +408,7 @@
         </div>
     </div>
 </section>
-<section class="portfolio text-center section-padding" id="portfolio">
+<section class="portfolio text-center section-padding hide" id="portfolio">
     <div class="container">
         <div class="row">
             <div id="portfolioSlider">
@@ -525,13 +539,26 @@
                 <div id="teamSlider">
                     <ul class="slides">
                         <li>
-                            <div class="col-md-4 wp5">
-                                <img src="img/team-01.png" alt="Team Member">
+                            <div class="col-md-6 wp5">
+                                <div id="intro-pic">
+                                    <svg version="1.1" id="stache" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.689px" height="53.854px" viewBox="0 0 49.689 53.854" xml:space="preserve">
+						<g>
+							<path d="M20.614,31.958c2.069-0.732,3.569-2.252,4.06-4.102
+						c0.605,2.123,2.64,3.805,5.249,4.37c0.229,0.22,0.492,0.402,0.791,0.525c5.206,2.135,17.623,6.034,18.949-4.614
+						c0.171-1.37-0.479-1.532-1.413-0.517c-1.396,1.521-3.581,3.193-5.835,2.143c-1.251-0.584-2.212-2.672-2.745-3.943
+						c-0.922-2.203-2.604-5.343-5.083-6.632c-0.184-0.095-0.372-0.141-0.562-0.161c-0.689-0.29-1.424-0.455-2.187-0.455
+						c-3.486,0-6.4,3.464-7.159,6.509c-0.655-3.045-3.211-6.509-6.692-6.509c-0.707,0-1.381,0.15-2.015,0.404
+						c-0.188,0.012-0.377,0.046-0.562,0.122c-2.782,1.156-5.117,4.098-6.479,6.144c-0.767,1.15-2.218,2.827-3.548,3.194
+						c-1.79,0.493-3.085-0.033-3.962-0.753c-1.068-0.875-1.562-0.85-1.387,0.519c1.375,10.684,14.239,6.677,19.562,4.533
+						C20.005,32.572,20.344,32.292,20.614,31.958" />
+						</g>
+					</svg>
+                                </div>
 
-                                <h2>Jon Snow</h2>
+                                <h2>Eric Miller</h2>
 
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non
-                                    metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                                <p>
+                                </p>
 
                                 <div class="social">
                                     <ul class="social-buttons">
@@ -542,79 +569,13 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4 wp5 delay-05s">
-                                <img src="img/team-02.png" alt="Team Member">
+                            <div class="col-md-6 wp5 delay-05s">
+                                <img src="img/cj-pic.jpg" class=" intro-pic" alt="Team Member">
 
-                                <h2>Cersei Lannister</h2>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non
-                                    metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-
-                                <div class="social">
-                                    <ul class="social-buttons">
-                                        <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
-                                        <li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-4 wp5 delay-1s">
-                                <img src="img/team-03.png" alt="Team Member">
-
-                                <h2>Jamie Lannister</h2>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non
-                                    metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-
-                                <div class="social">
-                                    <ul class="social-buttons">
-                                        <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
-                                        <li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="col-md-4 wp5">
-                                <img src="img/team-01.png" alt="Team Member">
-
-                                <h2>Jon Snow</h2>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non
-                                    metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-
-                                <div class="social">
-                                    <ul class="social-buttons">
-                                        <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
-                                        <li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-4 wp5 delay-05s">
-                                <img src="img/team-02.png" alt="Team Member">
-
-                                <h2>Cersei Lannister</h2>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non
-                                    metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-
-                                <div class="social">
-                                    <ul class="social-buttons">
-                                        <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
-                                        <li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-4 wp5 delay-1s">
-                                <img src="img/team-03.png" alt="Team Member">
-
-                                <h2>Jamie Lannister</h2>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non
-                                    metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                                <h2>CJ Ogbuehi</h2>
+<!--todo:get a bio from CJ-->
+                                <p>
+                                </p>
 
                                 <div class="social">
                                     <ul class="social-buttons">
@@ -655,21 +616,21 @@
                 <div class="light-box box-hover">
                     <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
 
-                    <p>Level 6, 23 Pitt St, Sydney</p>
+                    <p>123 High St. Austin, TX 78741</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="light-box box-hover">
                     <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
-
-                    <p>+61 9 211 3747</p>
+                    <!--todo: get a twilio or google voice #-->
+                    <p>Get a google voice or Twilio #</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="light-box box-hover">
                     <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
 
-                    <p><a href="#">hey@halcyondays.com</a></p>
+                    <p><a href="#">founders@genysolutions.net</a></p>
                 </div>
             </div>
         </div>
@@ -699,6 +660,7 @@
         </div>
     </div>
 </footer>
+<script type="text/javascript" src="js/skrollr.min.js"></script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="./js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
