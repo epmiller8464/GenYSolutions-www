@@ -151,15 +151,31 @@ $(window).load(function () {
         }
     });
     $('#showcaseSlider2').flexslider({
-        animation: "slide",
+        animation: "fade",
         directionNav: false,
-        controlNav: true,
+        randomize:true,
+        controlNav: false,
         touch: true,
         pauseOnHover: false,
         start: function () {
             $.waypoints('refresh');
         }
     });
+    $('#showcaseSlider3').flexslider({
+        animation: "fade",
+        slideshowspeed:1500,
+        initDelay:1000,
+        randomize:true,
+        directionNav: false,
+        controlNav: false,
+        touch: true,
+        pauseOnHover: false,
+
+        start: function () {
+            $.waypoints('refresh');
+        }
+    });
+
     $('#servicesSlider').flexslider({
         animation: "slide",
         directionNav: false,

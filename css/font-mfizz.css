@@ -27,9 +27,11 @@
     font-weight: normal;
     font-style: normal
 }
+
 .fm{
-    font-size: 24em;
+    font-size: 8em;
 }
+
 .icon-microscope:before,
 .icon-cplusplus:before,
 .icon-wireless:before,

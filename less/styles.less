@@ -485,7 +485,7 @@ h2::after {
 }
 
 .wrapper {
-  height: 700px;
+  height: 650px;
 }
 
 .nopadding {
@@ -500,9 +500,9 @@ h2::after {
 Navigation
 ========================================================================== */
 #nav-logo {
-
   .brand-grey-rgba(1);
   background: @c;
+  width: 75%;
 }
 
 nav {
@@ -799,6 +799,30 @@ Intro
   transition: fill linear .7ms;
 }
 
+
+.info
+{
+  max-width: 940px;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.info.me
+{
+  border-top: 1px #333 solid;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px 0px 20px 0px;
+  line-height: 30px;
+  border-bottom: none;
+}
+
+.info.me p:first-of-type
+{
+  margin: 0 5% 20px 5%;
+  text-align: center;
+}
 .intro {
 }
 
@@ -878,33 +902,16 @@ iPhone Section
   z-index: 1;
 }
 
-.showcase {
-  background: url('../img/showcase-bg-fixed-01.jpg') no-repeat center center fixed;
-  background-size: cover;
-}
-
-.showcase h1 {
-  margin: 0 0 20px 0;
-  color: #fff;
-  font-weight: 400;
-  font-size: 22px;
-}
-
-.showcase p {
-  margin-bottom: 25px;
-  color: #fff;
-}
-
 .device {
   position: absolute;
   top: -60px;
-  left: 20%;
+  left: 20px;
   min-height: 676px;
   width: 359px;
   background: url('../img/iphone-skeleton.png') no-repeat center center;
-  transform: scale(0.7, 0.7);
-  -ms-transform: scale(0.7, 0.7);
-  -webkit-transform: scale(0.7, 0.7);
+  transform: scale(0.9,0.9);
+  -ms-transform:scale(0.9,0.9);
+  -webkit-transform: scale(0.9,0.9);
 }
 
 .device-content {
@@ -919,33 +926,6 @@ iPhone Section
 .device-content img {
   width: 247px;
   height: 445px;
-}
-
-.device-tablet {
-  position: absolute;
-  top: 60px;
-  right: 20%;
-  height: 776px;
-  width: 65%;
-  background: url('../img/ipad-2x.png') no-repeat;
-  background-size: 100%;
-  /* transform: scale(0.8,0.8);
-   -ms-transform: scale(0.8,0.8);
-   -webkit-transform: scale(0.8,0.8);*/
-}
-
-.device-tablet-content {
-  position: absolute;
-  top: 35px;
-  left: 0px;
-  width: 100%;
-  height: 90%;
-  //  background: rgba(0, 0, 0, 0.1);
-}
-
-.device-tablet-content img {
-  height: 400px;
-  width: 85%;
 }
 
 #processSlider {
