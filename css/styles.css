@@ -381,7 +381,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #fff;
+  color: #d81c4c;
   text-decoration: none;
 }
 p {
@@ -416,6 +416,7 @@ h2::after {
   -webkit-box-shadow: 0px 3px 0px 0px #f0f2f4;
   -moz-box-shadow: 0px 3px 0px 0px #f0f2f4;
   box-shadow: 0px 3px 0px 0px #f0f2f4;
+  padding: 20px 0;
 }
 .light-box {
   background-color: #fff;
@@ -668,7 +669,7 @@ Intro
 .intro-pic {
   width: 100%;
   position: relative;
-  margin: 0px auto;
+  margin: 0px auto 40px auto;
   padding: 0px;
   width: 200px;
   height: 200px;
@@ -680,7 +681,7 @@ Intro
 #intro-pic {
   width: 100%;
   position: relative;
-  margin: 0px auto 40px auto;
+  margin: 0px auto 55px auto;
   padding: 0px;
   width: 200px;
   height: 200px;
@@ -689,6 +690,7 @@ Intro
   background: url('../img/c-me.png') no-repeat;
   background-position: 45% -1px;
   background-size: 210%;
+  vertical-align: middle;
 }
 #stache {
   transform: rotate(18deg) scale(1.1);
@@ -721,8 +723,11 @@ Intro
   margin: 0 5% 20px 5%;
   text-align: center;
 }
+.intro p:first-of-type {
+  margin: 40px 0 0;
+}
 .intro p {
-  margin: 50px 0 0;
+  margin: 25px 0 0;
   color: #292d3d;
 }
 h1.arrow {
@@ -1055,15 +1060,12 @@ CTA
 }
 .ignite-btn:hover,
 .ignite-btn:focus {
-  color: #292d3d;
+  color: #d81c4c;
   border: solid 1px #292d3d;
 }
 /* ==========================================================================
 Team
 ========================================================================== */
-.team img {
-  margin-bottom: 40px;
-}
 ul.social-buttons {
   list-style: none;
   margin: 0;
@@ -1191,6 +1193,7 @@ Waypoints
 ========================================================================== */
 .wp1,
 .wp2,
+.wp3,
 .wp4,
 .wp5,
 .wp6 {
@@ -1198,6 +1201,7 @@ Waypoints
 }
 .bounceInLeft,
 .bounceInRight,
+.bounceInDown,
 .fadeInUp,
 .fadeInUpDelay,
 .fadeInDown,
@@ -1213,9 +1217,6 @@ Waypoints
 .delay-1s {
   animation-delay: 1s;
   -webkit-animation-delay: 1s;
-}
-.wp3 {
-  height: 100%;
 }
 /* d3 Hamiltonian Styles */
 .range-text {
