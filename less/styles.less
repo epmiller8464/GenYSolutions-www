@@ -495,6 +495,8 @@ h2::after {
 
 .inner {
   padding-top: 170px;
+  max-width: 70%;
+  margin: 0px auto;
 }
 
 /* ==========================================================================
@@ -507,7 +509,7 @@ Navigation
 }
 
 nav {
-//  background-color: rgba(255, 255, 255, 0.7);
+  //  background-color: rgba(255, 255, 255, 0.7);
   margin-top: -1px;
 }
 
@@ -549,8 +551,12 @@ nav ul li a:hover, nav ul li a:focus {
   color: rgba(255, 255, 255, 1);
 }
 
+.main-nav a {
+  padding: 0;
+}
+
 .main-nav.navbar {
-//  background-color: transparent;
+  //  background-color: transparent;
   padding: 0;
   font-size: 1.25em;
 }
@@ -675,7 +681,6 @@ Hero
   height: auto;
   .alpha-bg(0.5);
   background: @bg repeat url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAJUlEQVQYV2NkIAIwEqGGgYaK1m7fWx/s6dyI7AwaWofNt0RZBwCcbAQKlzbD4QAAAABJRU5ErkJggg==');
-  //  background: @bg transparent repeat url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAJUlEQVQYV2NkIAIwEqGGgYaK1m7fWx/s6dyI7AwaWofNt0RZBwCcbAQKlzbD4QAAAABJRU5ErkJggg==');
 }
 
 .jumbotron.hero .hero-overlay {
@@ -771,7 +776,6 @@ Intro
   background-size: 210%;
 }
 
-
 #intro-pic {
   width: 100%;
   position: relative;
@@ -802,16 +806,13 @@ Intro
   transition: fill linear .7ms;
 }
 
-
-.info
-{
+.info {
   max-width: 940px;
   margin: 0;
   padding: 20px 0;
 }
 
-.info.me
-{
+.info.me {
   border-top: 1px #333 solid;
   position: relative;
   width: 100%;
@@ -821,17 +822,18 @@ Intro
   border-bottom: none;
 }
 
-.info.me p:first-of-type
-{
+.info.me p:first-of-type {
   margin: 0 5% 20px 5%;
   text-align: center;
 }
+
 .intro {
 }
 
 .intro p:first-of-type {
   margin: 40px 0 0;
 }
+
 .intro p {
   margin: 25px 0 0;
   color: @brand-primary;
@@ -915,9 +917,9 @@ iPhone Section
   min-height: 676px;
   width: 359px;
   background: url('../img/iphone-skeleton.png') no-repeat center center;
-  transform: scale(0.9,0.9);
-  -ms-transform:scale(0.9,0.9);
-  -webkit-transform: scale(0.9,0.9);
+  transform: scale(0.9, 0.9);
+  -ms-transform: scale(0.9, 0.9);
+  -webkit-transform: scale(0.9, 0.9);
 }
 
 .device-content {
@@ -1224,7 +1226,6 @@ CTA
 Team
 ========================================================================== */
 
-
 ul.social-buttons {
   list-style: none;
   margin: 0;
@@ -1381,7 +1382,7 @@ Waypoints
   visibility: hidden;
 }
 
-.bounceInLeft, .bounceInRight, .bounceInDown ,.fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight {
+.bounceInLeft, .bounceInRight, .bounceInDown, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight {
   visibility: visible;
 }
 
@@ -1394,7 +1395,6 @@ Waypoints
   animation-delay: 1s;
   -webkit-animation-delay: 1s;
 }
-
 
 /* d3 Hamiltonian Styles */
 .range-text {
